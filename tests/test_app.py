@@ -1,4 +1,4 @@
-from app import add  # Import the add function from app.py
+from .app import add  # Import the add function from app.py
 
 
 def test_add_positive_numbers():
