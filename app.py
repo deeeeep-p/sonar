@@ -5,5 +5,9 @@ def add(x, y):
     return x + y
 
 if __name__ == "__main__":
-    result = add(5, 3)
-    print(f"The result of 5 + 3 is: {result}")
+    x = 5  # Use fixed values for demonstration
+    y = 3
+    result = add(x, y)
+    print(f"The result of {x} + {y} is: {result}")
+
+# DO NOT put any input() calls here or anywhere else outside if __name__ == "__main__":
