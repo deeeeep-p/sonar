@@ -1,5 +1,10 @@
-from .app import add  # Import the add function from app.py
+import sys
+import os
 
+# Add the project root to the Python path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+from app import add  # Now the import should work
 
 def test_add_positive_numbers():
     assert add(2, 3) == 5
